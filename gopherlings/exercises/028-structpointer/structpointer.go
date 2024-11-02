@@ -1,8 +1,6 @@
 // Problem:
 // TODO
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -14,7 +12,7 @@ func main() {
 	// the fields of the struct will be reflected
 	// in the struct the pointer references.
 	var myMovie movie
-	setMovie(myMovie)
+	setMovie(&myMovie)
 	fmt.Println(myMovie)
 }
 
@@ -24,7 +22,7 @@ type movie struct {
 }
 
 // You may need to only modify one line here.
-func setMovie(m movie) {
+func setMovie(m *movie) {
 	m.title = "Blue Planet"
 	m.score = 10
 }

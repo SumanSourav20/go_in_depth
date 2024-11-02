@@ -10,8 +10,6 @@
 //
 // This reference behaviour may be clearer after learning about pointers.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

@@ -22,8 +22,6 @@
 // you may uncomment the "I AM STILL GOING" to continue
 // solving the next exercises.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

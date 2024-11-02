@@ -11,8 +11,6 @@
 // In general, all methods on a given type should have either value or pointer receivers,
 // but not a mixture of both. We'll see why soon.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -30,10 +28,10 @@ func main() {
 type universalID int
 
 // Set sets the receiver universalID to newID.
-func (uid universalID) Set(newID int) {
-	uid = universalID(newID)
+func (uid *universalID) Set(newID int) {
+	*uid = universalID(newID)
 }
 
-func (uid universalID) Get() int {
-	return int(uid)
+func (uid *universalID) Get() int {
+	return int(*uid)
 }

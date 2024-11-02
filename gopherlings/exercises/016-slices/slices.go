@@ -18,8 +18,6 @@
 // is also part of it's type.
 //
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

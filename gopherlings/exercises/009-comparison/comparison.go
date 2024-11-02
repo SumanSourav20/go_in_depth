@@ -10,8 +10,6 @@
 //     a <= b    means "a is less-or-equal than b"
 //     a >= b    means "a is greater-or-equal than b"
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

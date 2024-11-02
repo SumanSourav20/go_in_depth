@@ -8,8 +8,6 @@
 // initialization are "zero-valued" For example, integers
 // will be equal to zero when declared without assigning to them.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

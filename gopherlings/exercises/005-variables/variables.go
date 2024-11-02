@@ -37,8 +37,6 @@
 // For example, strings will be the empty string "", numbers will be 0.
 //
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

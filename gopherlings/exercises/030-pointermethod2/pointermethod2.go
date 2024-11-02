@@ -1,7 +1,5 @@
 // Problem:
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -31,4 +29,8 @@ func (u userDatabase) IsAdmin(email string) bool {
 		}
 	}
 	return false
+}
+
+func (u *userDatabase) AddAdmin(admin string) {
+	u.admins = append(u.admins, admin)
 }

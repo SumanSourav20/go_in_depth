@@ -13,8 +13,6 @@
 //		// same code
 //  }
 
-// I AM STILL GOING
-
 package main
 
 import (
@@ -33,7 +31,7 @@ func main() {
 	// We want to print formatted information on the book though- we
 	// could do this by calling a certain method that returns formatted
 	// information on the book.
-	fmt.Println(checkedOut)
+	fmt.Println(checkedOut.Info())
 }
 
 type book struct {
@@ -49,4 +47,7 @@ type book struct {
 func (b book) Info() string {
 	yearString := strconv.Itoa(b.year) // convert year to string!
 	return "\"" + b.title + "\" by " + b.author + " (" + yearString + ")"
+}
+func (b book) String() string {
+	return b.title + b.author
 }

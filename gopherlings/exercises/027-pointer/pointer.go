@@ -23,8 +23,6 @@
 //  fmt.Println(*ref) // prints 1337
 //
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
@@ -35,7 +33,7 @@ func main() {
 	// the desired result: zeroIt should modify value without needing
 	// a return parameter.
 	value := 2
-	zeroIt(value) // We may need to pass `value` by reference here.
+	zeroIt(&value) // We may need to pass `value` by reference here.
 	fmt.Println(value)
 }
 
@@ -43,6 +41,6 @@ func main() {
 // need the help of a pointer! Change the argument type
 // so that zeroIt accepts a pointer and then modify the function
 // body so that we assign zero to p.
-func zeroIt(p int) {
-	p = 0
+func zeroIt(p *int) {
+	*p = 0
 }

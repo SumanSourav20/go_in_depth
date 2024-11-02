@@ -25,8 +25,6 @@
 //
 //
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"

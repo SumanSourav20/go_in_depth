@@ -13,8 +13,6 @@
 // When searching a map for a non-existent value the element's zero-value
 // will be returned.
 
-// I AM STILL GOING
-
 package main
 
 import "fmt"
